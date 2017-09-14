@@ -1,3 +1,20 @@
+# aws sshfs
+Originally I thought I would install an NFS server on my EC2 instance and then mount a file system from my home network - local host is on a private IP.
+
+After installing service on the server side and a client on the client side, mount command did not work to mount the remote file system.
+
+The error in the terminal was a timeout.
+
+`dmesg|tail` shows this error 
+
+`NFS: nfs4_discover_server_trunking unhandled error -512. Exiting with error EIO`
+
+So I did, 
+`sudo apt install sshfs`
+
+Then 
+`sshfs  ubuntu@23.22.50.118:/home/ubuntu ~/mnt`
+
 # aws-nfs4
 notes and configs for running nfs-4 on aws instance
 
