@@ -15,6 +15,8 @@ So I did,
 Then 
 `sshfs  ubuntu@23.22.50.118:/home/ubuntu ~/mnt`
 
+I am able to use files under ~/mnt as if they are local files, which is the desired result.
+
 # aws-nfs4
 notes and configs for running nfs-4 on aws instance
 
