@@ -26,3 +26,5 @@ sudo service nfs-kernel-server restart
 sudo service idmapd restart I got an error message like:
 Failed to restart idmapd.service: Unit idmapd.service is masked
 so I just rebooted the server, that'll show 'em
+
+! must install nfs-common on client
